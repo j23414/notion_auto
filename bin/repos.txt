@@ -1,0 +1,11 @@
+repos/nextstrain/ncov/issues
+repos/nextstrain/augur/issues
+repos/nextstrain/auspice/issues
+repos/nextstrain/nextclade/issues
+repos/nextstrain/seasonal-flu/issues
+repos/nextstrain/fauna/issues
+repos/nextstrain/ncov-ingest/issues
+repos/nextstrain/private/issues
+repos/nextstrain/cli/issues
+repos/nextstrain/nextstrain.org/issues
+repos/nextstrain/docs.nextstrain.org/issues
