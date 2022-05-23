@@ -9,3 +9,4 @@ repos/nextstrain/private/issues
 repos/nextstrain/cli/issues
 repos/nextstrain/nextstrain.org/issues
 repos/nextstrain/docs.nextstrain.org/issues
+repos/nextstrain/monkeypox/issues
