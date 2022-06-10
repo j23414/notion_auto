@@ -2,6 +2,9 @@
 
 nextflow.enable.dsl=2
 
+params.requests_csv="Requests.csv" // Pull out of notion
+// todo: there's probably a direct Notion app
+
 process fetch_github_issues {
   publishDir "results", mode: 'copy'
   output: path("01_github_issues.txt")
@@ -26,10 +29,11 @@ process subset_new {
 
 workflow {
   issues_ch = fetch_github_issues()
-
+    | view
   if(params.requests_csv) {
     issues_ch
-    | combine(channel.fromPath(params.requests_csv))
-    | subset_new
+      | combine(channel.fromPath(params.requests_csv))
+      | subset_new
+      | view
   }
 }
